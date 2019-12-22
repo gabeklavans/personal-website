@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+}
+
+.navbar {
+    width: 100vw;
+    background-color: rgba(70, 143, 240, 0.76);
+}
+
+.navbar button {
+    display: none;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 3vh;
+}
+
+.nav-item {
+    list-style-type: none;
+    margin: 1vw 2vw;
+}
+
+.nav-link {
+    width: 100vw;
+    text-decoration: none;
+    color: black;
+    padding: 1vw 2vw;
+    font-family: monospace;
+}
+
+.nav-link:hover {
+    background-color: rgba(174, 202, 238, 0.76);
+}
+
+/*change the layout of the navigation bar for all the screens 
+that have a width less or equal than 500px*/
+
+@media only screen and (max-width: 500px) {
+    .nav-list {
+        flex-direction: column;
+    }
+    .nav-item {
+        margin: 0;
+    }
+    .nav-link {
+        display: block;
+        padding: 0;
+    }
+
+    .navbar button {
+        display: block;
+        
+        padding: 1vw;
+        font-size: 3vh;
+        background-color: inherit;
+        border: none;
+        
+        outline: none;
+        
+        cursor: pointer;
+
+        align-self: flex-start;
+      }
+}

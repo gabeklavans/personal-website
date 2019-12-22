@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <!-- Mobile reactive support -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="main.css">
+
   <title>Document</title>
 </head>
+
 <body>
-  
+
+  <header class="navbar">
+    <nav>
+      <ul class="nav-list">
+        <!-- Menu toggle for mobiles -->
+        <button id="nav-button"> ✖ </button>
+        
+        <li class="nav-item">
+          <a href="#" class="nav-link"> About Me </a href="#">
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"> Projects </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"> Resume </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"> Contacts </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <!-- JS -->
+  <script src="navbar.js"></script>
 </body>
+
 </html>

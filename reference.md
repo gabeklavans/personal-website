@@ -1,5 +1,9 @@
 The color of my background is: <span style="color: #272822">invisible</span>!  
 <span style="color: #F92672">reddish</span>  
 <span style="color: #66D9EF">blueish</span>  
-<span style="color: #A6E22E">greenish</span>  
+<span style="color: #A6E22E">greenish</span>   
 <span style="color: #FD971F">orangeish</span>  
+<span style="color: #E6DB74">tannish</span>  
+<span style="color: #88846F">comments</span>  
+<span style="color: #F8F8F2">whitehish</span>  
+<span style="color: #1E1F1C">darcc</span>  

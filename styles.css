@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("http://fonts.googleapis.com/css?family=Roboto:500,300");
+@import url('https://fonts.googleapis.com/css?family=Courier+Prime&display=swap');
 /*
 	Derivative of Ion by TEMPLATED
 	templated.co @templatedco
@@ -84,6 +85,8 @@ hr.major {
 header {
     background: #1E1F1C;
     /* cursor: default; */
+    color: #A6E22E;
+    font-family: 'Courier Prime', monospace;
     height: 3em;
     line-height: 3em;
     position: fixed;
@@ -95,9 +98,8 @@ header {
     z-index: 10000;
 }
 
-header h1 {
-    color: darkred;
-    font-weight: 500;
+header p {
+    /* font-weight: 500; */
     left: 1.25em;
     margin: 0;
     padding: 0;
@@ -106,8 +108,9 @@ header h1 {
     text-transform: none;
 }
 
-header h1 a {
-    font-size: 1.25em;
+header p a {
+    /* font-weight: normal; */
+    /* font-size: 1em; */
     text-decoration: none;
 }
 
@@ -133,7 +136,7 @@ header nav>ul>li {
 
 header nav>ul>li a {
     transition: color 0.2s ease-in-out;
-    color: #F8F8F2;
+    color: #A6E22E;
     display: inline-block;
     text-decoration: none;
 }
@@ -144,6 +147,24 @@ header nav>ul>li a:hover {
 
 header nav>ul>li:first-child {
     margin-left: 0;
+}
+
+.home {
+    padding: 0 1em;
+    margin: 0 -1em;
+}
+
+/* Thanks for this blinking animation, Mr. Alien
+https://stackoverflow.com/questions/16344354/how-to-make-blinking-flashing-text-with-css3/16344389#comment54567328_16344389
+ */
+.blink {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
 }
 
 /* header .container {

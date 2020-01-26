@@ -1,21 +1,9 @@
-/* jshint esversion: 6 */
-let button = document.getElementById('nav-button');
-
-console.log();
-
-// close mobile menu initially
-if (getComputedStyle(button, null).display !== 'none') {
-    $('.nav-item').toggle();
-}
-
-button.onclick = () => {
-    // toggle between open and closed hamburger
-    if (button.textContent == '✖') {
-        button.textContent = '☰';
+ /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+ function myFunction() {
+    var x = document.getElementById("nav-main");
+    if (x.className === "topnav") {
+      x.className += " responsive";
     } else {
-        button.textContent = '✖';
+      x.className = "topnav";
     }
-
-    // toggle between open and closed nav menu
-    $('.nav-item').toggle('fast');
-};
+  }

@@ -9,6 +9,11 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
+  <!-- Font containing the hamburger bars menu icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- JS -->
+  <script src="navbar.js"></script>
 
   <title>Home</title>
 </head>
@@ -18,13 +23,14 @@
   <!-- Navbar -->
   <header>
     <p>~ > cd <span class="blink">|</span></p>
-    <nav id="nav-main">
-      <ul>
-        <li><a href="./about_me.html"> About_Me </a></li>
-        <li><a href="#"> Projects </a></li>
-        <li><a href="#"> Resume </a></li>
-        <li><a href="./blog.html"> Blog </a></li>
-      </ul>
+    <nav class="topnav" id="nav-main">
+        <a href="./about_me.html"> About_Me </a></li>
+        <a href="#"> Projects </a></li>
+        <a href="#"> Resume </a></li>
+        <a href="./blog.html"> Blog </a></li>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
     </nav>
   </header>
 

@@ -7,7 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font containing the hamburger bars menu icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- JS -->
+  <script src="navbar.js"></script>
 
     <title>About_Me</title>
 </head>
@@ -17,14 +22,15 @@
     <!-- Navbar -->
     <header>
         <p>~/About_Me > cd <span class="blink">|</span></h1>
-        <nav id="nav-main">
-            <ul>
-                <li><a href="./index.html" class="home"> ~ </a></li>
-                <li><a href="#"> Projects </a></li>
-                <li><a href="#"> Resume </a></li>
-                <li><a href="./blog.html"> Blog </a></li>
-            </ul>
-        </nav>
+            <nav class="topnav" id="nav-main">
+                <a href="./index.html" class="home"> ~ </a>
+                <a href="#"> Projects </a>
+                <a href="#"> Resume </a>
+                <a href="./blog.html"> Blog </a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
     </header>
 
     <main>
